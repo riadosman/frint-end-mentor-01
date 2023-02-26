@@ -1,0 +1,133 @@
+:root{
+    --pr-blue:hsl(215, 51%, 70%);
+    --pr-cayn:hsl(178, 100%, 50%);
+    --main-bg:hsl(217, 54%, 11%);
+    --card-bg:hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+body{
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--main-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    margin: 20px;
+    position: relative;
+}
+.card{
+    margin-top: 100px;
+    background-color: var(--card-bg);
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 150px 0px #000 ;
+}
+.card .content h1{
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--white);
+}
+.card .content{
+    position: relative;
+}
+.card .content p{
+    color: var(--pr-blue);
+    font-size: 15px;
+    margin: 0;
+}
+.left-ethereum{
+    display: inline-flex;
+    align-items: center;
+    margin-top: -10px;
+    height: 10px;
+    margin: 0;
+    width: 100px;
+}
+.left-ethereum h4{
+    font-size: 14px;
+    margin: 0 5px;
+    color: var(--pr-cayn);
+}
+.right-ethereum h5{
+    margin: 0 5px;
+    display: inline;
+    color: var(--line);
+}
+.right-ethereum {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 70px;
+    height: 10px;
+    margin: 0;
+    width: 100px;
+}
+.ethereum{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+hr{
+    margin-top: 20px;
+    border-color:var(--pr-blue) ;
+    opacity: 0.1;
+    width: 270px;
+}
+.creation{
+    display: flex;
+    align-items: center;
+}
+.creation img{
+   width: 30px;
+   border: 0.1px white solid;
+   border-radius: 50px;
+}
+.creation p{
+    margin-left: 10px;
+    color: var(--pr-blue);
+    font-size: 15px;
+    display: inline;
+}
+span{
+    font-size: 16px;
+    color: var(--white);
+}
+span:hover,
+.card .content h1:hover{
+    color: aqua;
+    cursor: pointer;
+}
+.card .img .hover-img{
+    display: none;
+}
+.img{
+    border-radius: 20px;
+    background-size: cover;
+    width: 260px;
+    height: 260px;
+    position: relative;
+    display: flex;
+}
+.card .img .m-bg{
+    border-radius: 20px;
+    width: 260px;
+}
+.img:hover .hover-img {
+    background-color: aqua;
+    border-radius: 20px;
+    background-size: cover;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    
+}
